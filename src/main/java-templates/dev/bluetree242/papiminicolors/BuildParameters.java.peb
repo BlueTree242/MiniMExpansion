@@ -1,0 +1,5 @@
+package dev.bluetree242.papiminicolors;
+
+class BuildParameters {
+    public static final String VERSION = "{{ version }}";
+}
