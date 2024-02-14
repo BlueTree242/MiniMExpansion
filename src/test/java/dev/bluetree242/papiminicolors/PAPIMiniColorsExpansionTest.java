@@ -44,12 +44,12 @@ public class PAPIMiniColorsExpansionTest {
     }
 
     private void test(String request, String expected, boolean section) {
-        MockedStatic<PlaceholderAPI> mockedStatic = mockStatic(PlaceholderAPI.class);
-        String placeholder = "%vault_prefix%";
-        String placeholderExact = "vault_prefix";
-        mockedStatic.when(() -> PlaceholderAPI.setPlaceholders((OfflinePlayer) any(), eq(placeholder))).thenReturn(request);
-        String result = expansion.onPlaceholderRequest(player, (section ? "section_" : "")  + placeholderExact);
-        assertEquals(result, expected);
-        mockedStatic.close();
+        try (MockedStatic<PlaceholderAPI> mockedStatic = mockStatic(PlaceholderAPI.class)) {
+            String placeholder = "%vault_prefix%";
+            String placeholderExact = "vault_prefix";
+            mockedStatic.when(() -> PlaceholderAPI.setPlaceholders((OfflinePlayer) any(), eq(placeholder))).thenReturn(request);
+            String result = expansion.onPlaceholderRequest(player, (section ? "section_" : "")  + placeholderExact);
+            assertEquals(result, expected);
+        }
     }
 }
