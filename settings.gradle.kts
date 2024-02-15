@@ -1,2 +1,2 @@
-rootProject.name = "PAPIMiniColors"
+rootProject.name = "MiniMExpansion"
 

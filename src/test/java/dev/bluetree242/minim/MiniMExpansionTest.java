@@ -1,4 +1,4 @@
-package dev.bluetree242.papiminicolors;
+package dev.bluetree242.minim;
 
 import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.OfflinePlayer;
@@ -15,11 +15,11 @@ import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mockStatic;
 
 @ExtendWith(MockitoExtension.class)
-public class PAPIMiniColorsExpansionTest {
+public class MiniMExpansionTest {
     private final Player player;
-    private final PAPIMiniColorsExpansion expansion = new PAPIMiniColorsExpansion();
+    private final MiniMExpansion expansion = new MiniMExpansion();
 
-    private PAPIMiniColorsExpansionTest(@Mock Player player) {
+    private MiniMExpansionTest(@Mock Player player) {
         this.player = player;
     }
 

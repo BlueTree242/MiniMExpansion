@@ -1,4 +1,4 @@
-package dev.bluetree242.papiminicolors;
+package dev.bluetree242.minim;
 
 import me.clip.placeholderapi.PlaceholderAPI;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
@@ -9,10 +9,9 @@ import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-
 import java.util.Locale;
 
-public class PAPIMiniColorsExpansion extends PlaceholderExpansion {
+public class MiniMExpansion extends PlaceholderExpansion {
     @Override
     public @NotNull String getIdentifier() {
         return "PAPIMiniColors".toLowerCase(Locale.ROOT);
