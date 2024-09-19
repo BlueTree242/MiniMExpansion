@@ -38,6 +38,7 @@ dependencies {
     tCompileOnly("io.papermc.paper:paper-api:1.20-R0.1-SNAPSHOT")
     tCompileOnly("me.clip:placeholderapi:2.11.5")
     tImplementation("net.kyori:adventure-api:4.15.0")
+    tImplementation("net.kyori:adventure-text-serializer-legacy:4.17.0")
     tImplementation("net.kyori:adventure-text-minimessage:4.15.0")
 
     testImplementation("org.mockito:mockito-core:3.12.4")
