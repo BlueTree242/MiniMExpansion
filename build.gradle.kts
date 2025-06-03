@@ -4,7 +4,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
-version = "1.1.1"
+version = "1.1.1-SNAPSHOT"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -37,8 +37,6 @@ repositories {
 dependencies {
     tCompileOnly("io.papermc.paper:paper-api:1.20-R0.1-SNAPSHOT")
     tCompileOnly("me.clip:placeholderapi:2.11.5")
-    tImplementation("net.kyori:adventure-api:4.20.0")
-    tImplementation("net.kyori:adventure-text-serializer-legacy:4.20.0")
     tImplementation("net.kyori:adventure-text-minimessage:4.20.0")
 
     testImplementation("org.mockito:mockito-core:3.12.4")
